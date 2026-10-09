@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --plutonium-cyan: #00d2ff;
+  --plutonium-blue: #0072ff;
+  --plutonium-purple: #8e2de2;
+  --bg-gradient: linear-gradient(135deg, #f0f4f9 0%, #e8edf5 100%);
+  --card-bg: #ffffff;
+
+  /* 3D Realistic Shadows */
+  --shadow-3d-card:
+    0 10px 25px -5px rgba(0, 50, 120, 0.08),
+    0 8px 10px -6px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --shadow-3d-card-hover:
+    0 20px 35px -5px rgba(0, 60, 150, 0.12),
+    0 12px 16px -8px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 1);
+  --shadow-3d-inset:
+    inset 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(255, 255, 255, 0.8);
+  --shadow-3d-glow: 0 0 18px rgba(0, 210, 255, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Outfit",
+    "Inter",
+    -apple-system,
+    sans-serif;
+  background: var(--bg-gradient);
+  color: #1e293b;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3D Floating Card Base */
+.card-3d {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow-3d-card);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-3d:hover {
+  box-shadow: var(--shadow-3d-card-hover);
+}
+
+/* 3D Inset Inputs */
+.input-3d {
+  width: 100%;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #0f172a;
+  box-shadow: var(--shadow-3d-inset);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.input-3d:focus {
+  background: #ffffff;
+  border-color: var(--plutonium-cyan);
+  box-shadow:
+    0 0 0 3px rgba(0, 210, 255, 0.2),
+    inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 3D Tactile Buttons */
+.btn-3d-primary {
+  background: linear-gradient(
+    135deg,
+    var(--plutonium-cyan) 0%,
+    var(--plutonium-blue) 100%
+  );
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow:
+    0 4px 12px rgba(0, 114, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-3d-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 18px rgba(0, 114, 255, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-3d-primary:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 2px 6px rgba(0, 114, 255, 0.35),
+    inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d-secondary {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-3d-secondary:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}

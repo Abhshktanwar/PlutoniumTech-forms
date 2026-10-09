@@ -1,0 +1,132 @@
+.formview-layout {
+  max-width: 720px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+/* Header Banner Card */
+.formview-header {
+  position: relative;
+  overflow: hidden;
+  padding: 36px 32px;
+  margin-bottom: 24px;
+  background: #ffffff;
+}
+
+.formview-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(90deg, #00d2ff 0%, #0072ff 50%, #8e2de2 100%);
+}
+
+.formview-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.formview-logo {
+  height: 32px;
+  width: auto;
+}
+
+.formview-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.formview-desc {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.required-notice {
+  font-size: 13px;
+  color: #ef4444;
+  margin-top: 14px;
+  font-weight: 500;
+}
+
+/* Question Cards */
+.formview-question-card {
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.formview-q-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required-star {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* 3D Option Rows */
+.view-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.view-option-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 15px;
+  color: #334155;
+}
+
+.view-option-label:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.view-option-label input[type="radio"],
+.view-option-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0072ff;
+  cursor: pointer;
+}
+
+/* Submit Action Bar */
+.formview-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+/* Success Card */
+.success-card {
+  padding: 48px 32px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.success-icon {
+  color: #10b981;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.3));
+}

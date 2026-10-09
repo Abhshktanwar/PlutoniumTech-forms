@@ -1,0 +1,22 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer-credits {
+  text-align: center;
+  padding: 24px 0 32px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-credits span {
+  color: #0072ff;
+  font-weight: 600;
+}
