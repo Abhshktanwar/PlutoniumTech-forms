@@ -27,6 +27,16 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+app.get("/api/test-db", (req, res) => {
+  const states = ["Disconnected", "Connected", "Connecting", "Disconnecting"];
+  res.json({
+    state: states[mongoose.connection.readyState] || mongoose.connection.readyState,
+    hasMongoUri: !!process.env.MONGO_URI,
+    uriPreview: process.env.MONGO_URI ? process.env.MONGO_URI.substring(0, 25) + "..." : "not set",
+    lastError: mongoose.connection.lastError || null
+  });
+});
+
 // MongoDB connection
 
 mongoose
