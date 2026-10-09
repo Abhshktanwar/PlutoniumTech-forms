@@ -4,7 +4,7 @@ import axios from "axios";
 import { CheckCircle2, Send, RotateCcw, AlertTriangle } from "lucide-react";
 import "./FormView.css";
 
-const API_BASE = "http://localhost:5000/api/forms";
+import { API_BASE } from "../config";
 
 const FormView = () => {
   const { id } = useParams();

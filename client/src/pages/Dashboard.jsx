@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import "./Dashboard.css";
 
-const API_BASE = "http://localhost:5000/api/forms";
+import { API_BASE } from "../config";
 
 const Dashboard = () => {
   const navigate = useNavigate();
